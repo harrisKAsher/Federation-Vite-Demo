@@ -1,0 +1,5 @@
+{
+	"extends": "@demo/typescript-config/base.json",
+	"include": ["src", "src/*", "lib", "locales"],
+	"exclude": ["node_modules"]
+}

@@ -1,0 +1,35 @@
+# dependencies
+node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode
+*.code-workspace
+
+# .env*
+.env
+liquibase.properties
+dump.rdb
+
+# auto generated federation files for dev
+**/**/.__mf__temp
+
+#build
+**/**/dist
+
+# System Files
+.DS_Store
+Thumbs.db
+
+#other
+.turbo
+**/.turbo
+*.deb
+*.zip
+*.timestamp*.mjs

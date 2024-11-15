@@ -1,0 +1,10 @@
+{
+	"extends": "@demo/typescript-config/base.json",
+	"include": [
+      "src", "src/*", "lib"],
+	"references": [
+		{
+			"path": "./tsconfig.node.json"
+		}
+	]
+}
