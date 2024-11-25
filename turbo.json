@@ -15,14 +15,8 @@
 			"cache": false,
 			"persistent": true
 		},
-		"live": {
-			"dependsOn": ["^live"],
-			"inputs": [".env"],
-			"cache": false,
-			"persistent": true
-		},
-		"live-mobile": {
-			"dependsOn": ["^live"],
+		"preview": {
+			"dependsOn": ["^preview"],
 			"inputs": [".env"],
 			"cache": false,
 			"persistent": true

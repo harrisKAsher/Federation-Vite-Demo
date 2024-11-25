@@ -1,6 +1,7 @@
 import React from 'react';
 
 const globalStore = await import('globalStore/Store');
+import "../index.css"
 
 
 export default function Index() {
@@ -8,9 +9,7 @@ export default function Index() {
 
     return (
         <>
-            <div>Core
-                App
-            </div>
+            <div className="text-red-500">Core App</div>
             <div>{store.isDesktop ? 'Desktop' : 'Mobile'}</div>
         </>
     );

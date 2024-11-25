@@ -6,27 +6,22 @@ export default defineConfig({
 	plugins: [
 		federation({
 			name: 'host',
-			manifest: {
-				fileName: 'mf-manifest.json'
-			},
-			// filename: 'assets/remoteEntry.js',
+			filename: 'assets/remoteEntry.js',
 			remotes: {
-				core: `core@http://localhost:3100/mf-manifest.json`,
-				globalStore: 'globalStore@http://localhost:3110/mf-manifest.json'
-				// core: {
-				// 	type: 'module',
-				// 	name: 'core',
-				// 	entry: 'http://localhost:3100/assets/remoteEntry.js',
-				// 	entryGlobalName: 'core',
-				// 	shareScope: 'default'
-				// },
-				// globalStore: {
-				// 	type: 'module',
-				// 	name: 'globalStore',
-				// 	entry: 'http://localhost:3110/assets/remoteEntry.js',
-				// 	entryGlobalName: 'globalStore',
-				// 	shareScope: 'default'
-				// }
+				core: {
+					type: 'module',
+					name: 'core',
+					entry: 'http://localhost:3100/assets/remoteEntry.js',
+					entryGlobalName: 'core',
+					shareScope: 'default'
+				},
+				globalStore: {
+					type: 'module',
+					name: 'globalStore',
+					entry: 'http://localhost:3110/assets/remoteEntry.js',
+					entryGlobalName: 'globalStore',
+					shareScope: 'default'
+				}
 			},
 			shared: {
 				react: {

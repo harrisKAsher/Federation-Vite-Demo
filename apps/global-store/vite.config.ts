@@ -8,9 +8,6 @@ export default defineConfig({
 		federation({
 			name: 'globalStore',
 			filename: 'assets/remoteEntry.js',
-			manifest: {
-				fileName: 'mf-manifest.json'
-			},
 			exposes: {
 				'./Store': './src/store.tsx'
 			},
