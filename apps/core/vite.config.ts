@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import { federation } from '@module-federation/vite';
 
 export default defineConfig({
+	base: 'http://localhost:3100',
 	plugins: [
 		federation({
 			name: 'core',
